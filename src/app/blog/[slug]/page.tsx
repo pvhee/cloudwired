@@ -27,7 +27,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                     <article id={slug} className="active" style={{ display: 'block' }}>
                         <h2 className="major">{postData.title}</h2>
                         <span className="image main"><img src="/images/pic01.jpg" alt="" /></span>
-                        <p className="date">{postData.date}</p>
+                        <p className="date">{postData.date} by Peter Vanhee</p>
                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }} />
 
                         <hr />

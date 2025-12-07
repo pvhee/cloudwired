@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import { format } from 'date-fns';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
@@ -30,12 +31,13 @@ export function getSortedPostsData(): PostData[] {
         // Combine the data with the slug
         return {
             slug,
-            ...(matterResult.data as { title: string; date: string }),
+            title: matterResult.data.title,
+            date: format(new Date(matterResult.data.date), 'MMM d, yyyy'),
         };
     });
     // Sort posts by date
     return allPostsData.sort((a, b) => {
-        if (a.date < b.date) {
+        if (new Date(a.date) < new Date(b.date)) {
             return 1;
         } else {
             return -1;
@@ -71,6 +73,7 @@ export async function getPostData(slug: string): Promise<PostData> {
     return {
         slug,
         contentHtml,
-        ...(matterResult.data as { title: string; date: string }),
+        title: matterResult.data.title,
+        date: format(new Date(matterResult.data.date), 'MMM d, yyyy'),
     };
 }

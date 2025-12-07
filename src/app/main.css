@@ -1848,10 +1848,12 @@ body.is-preload #footer {
 
 .blog-wrapper #header {
 	margin-bottom: 3rem;
+	background-image: none;
 }
 
 .blog-wrapper #header .content {
 	border-color: #333;
+	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 }
 
 .blog-wrapper #header .content p {
