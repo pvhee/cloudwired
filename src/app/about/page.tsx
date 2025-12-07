@@ -9,11 +9,11 @@ export default function About() {
                         <div className="inner">
                             <h1>About Me</h1>
                             <p>
-                                I'm Peter, a software engineer passionate about cloud technologies and serverless architectures.
+                                Hi there, I'm Peter and I mostly write about cloud-native development.
                             </p>
-                            <p>
-                                Welcome to my personal corner of the internet where I share my thoughts and experiences.
-                            </p>
+                            <ul className="icons">
+                                <li><a href="https://github.com/pvhee" className="icon brands fa-github"><span className="label">GitHub</span></a></li>
+                            </ul>
                         </div>
                     </div>
                     <nav>
