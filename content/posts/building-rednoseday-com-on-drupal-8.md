@@ -4,6 +4,8 @@ date: "2016-12-21"
 originalUrl: "https://technology.comicrelief.com/2016/12/21/building-rednoseday-com-on-drupal-8/"
 ---
 
+## How can we build an engaging, fast and secure fundraising campaign website in a couple of months?
+
 As part of [our objectives in 2016](https://technology.comicrelief.com/2016/01/07/the-year-that-was-and-hello-2016/), we set out to solve a recurring problem at Comic Relief: how can we build an engaging, fast and secure fundraising campaign website — the likes of [rednoseday.com](https://www.rednoseday.com/) and [sportrelief.com](https://www.sportrelief.com/) — in a couple of months? How can we make sure that editors are able to create compelling landing pages that reach their different audiences?
 
 Technology-wise, we have been recycling codebases for the campaign site year after year, carrying tech debt together with bad development practices from one year into the next, leading to all sorts of issues, but mainly obstructing technical innovation from the start.

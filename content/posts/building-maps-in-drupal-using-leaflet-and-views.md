@@ -4,6 +4,8 @@ date: "2012-09-24"
 originalUrl: "https://marzeelabs.org/blog/2012-09-24-building-maps-in-drupal-using-leaflet-views"
 ---
 
+## The Drupal Leaflet module now has native Views support, making it really easy to display maps of your Drupal data.
+
 The new release of the Drupal [Leaflet module](https://www.drupal.org/project/leaflet) (missed our [introductory post](https://marzeelabs.org/blog/2012-09-08-introducing-leaflet-for-drupal)?) has native Views support, so it is now really easy to display a Leaflet map of Drupal data. In this post, I'll outline one common way of building maps in Drupal.
 
 Geo-data in Drupal is commonly represented with the [Geofield module](https://www.drupal.org/project/geofield), which can store points, lines and polygons. You can add a geofield to your content profile, user profile or custom entity, and the user can either pick a location from the map or directly input latitude and longitude. A more user-friendly alternative is to use the addressfield-geofield combination: using the excellent [Geocoder module](https://www.drupal.org/project/geocoder) any address field (provided by the [Addressfield module](https://www.drupal.org/project/addressfield)) can be geo-coded and stored in a geofield. The module can use Google, Yahoo, or any other custom geocoder to turn user-entered addresses into geographical coordinates.

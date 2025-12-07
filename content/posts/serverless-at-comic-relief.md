@@ -4,6 +4,8 @@ date: "2018-07-12"
 originalUrl: "https://technology.comicrelief.com/2018/07/12/serverless-at-comic-relief/"
 ---
 
+## Over a year into our serverless journey, our functions have been happily running in production — millions of invocations for just a couple of hundred dollars.
+
 It has been over a year since we first embarked on our serverless journey at Comic Relief, and our functions have been happily running in production ever since. We've invoked over 40 different functions — millions of times — and spent no more than a couple of hundred dollars, most of which spent on invoking functions hammering our servers as part of load testing.
 
 ![Serverless at Comic Relief](/images/posts/serverless-at-comic-relief.jpeg)

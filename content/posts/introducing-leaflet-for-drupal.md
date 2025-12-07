@@ -4,6 +4,8 @@ date: "2012-09-08"
 originalUrl: "https://marzeelabs.org/blog/2012-09-08-introducing-leaflet-for-drupal"
 ---
 
+## A slim, light-weight and beautiful Javascript mapping library comes to Drupal.
+
 Mapping on the web has been a hot topic since the introduction of [Google Maps API](https://developers.google.com/maps/) in 2005. Open-source alternatives have been released shortly after, with [OpenLayers](http://openlayers.org/) as the the most influential and complete mapping library. Very recently however a new library was released, called [Leaflet](http://leafletjs.com/). Leaflet is a slim, light-weight and above all beautiful Javascript library that has quickly become very popular and is now powering interactive maps on [Flickr](http://www.flickr.com/), [foursquare](https://foursquare.com/) and many other high profile sites.
 
 Best of all, there is a [Drupal module](https://www.drupal.org/project/leaflet) for Leaflet, to make is really easy to display maps on Drupal. A few weeks back, [ThinkShout](http://thinkshout.com/) and Marzee Labs, together with the help from the Drupal community, released beta 2. This new version has long-awaited Views support (read [our post](https://marzeelabs.org/blog/2012/09/24/building-maps-in-drupal-using-leaflet-views) on that), so you can use Views to query your data and plot it on a Leaflet map.

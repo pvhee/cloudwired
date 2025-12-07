@@ -4,6 +4,8 @@ date: "2017-05-14"
 originalUrl: "https://technology.comicrelief.com/2017/05/12/drupalcon-baltimore-talk-slides/"
 ---
 
+## Presenting our story of rebuilding rednoseday.com on Drupal 8 at DrupalCon Baltimore, Drupal's largest gathering with over 3000 attendees.
+
 Two weeks ago, I presented our story of rebuilding [rednoseday.com](https://www.rednoseday.com/) on Drupal 8 at [DrupalCon Baltimore](https://events.drupal.org/baltimore2017/sessions/building-reusable-websites-drupal-8-lessons-learned-transforming), Drupal's largest gathering with an attendance of over 3000!
 
 I talked about our journey of building a product to power all our editorial websites at Comic Relief ([see my previous blog post](https://technology.comicrelief.com/2016/12/21/building-rednoseday-com-on-drupal-8/)), and focused on three topics: *editor experience, automation & streamlining*, and *using decoupled services*.

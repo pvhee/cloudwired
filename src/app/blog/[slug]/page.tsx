@@ -6,6 +6,18 @@ export async function generateStaticParams() {
     return paths.map((path) => path.params);
 }
 
+function getSourceName(url: string): string {
+    if (url.includes('marzeelabs.org')) return 'Marzee';
+    if (url.includes('comicrelief.com')) return 'Comic Relief Technology Blog';
+    if (url.includes('hackernoon.com')) return 'Hackernoon';
+    if (url.includes('medium.com/we-are-serverless')) return 'We Are Serverless';
+    try {
+        return new URL(url).hostname;
+    } catch {
+        return url;
+    }
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const postData = await getPostData(slug);
@@ -28,6 +40,11 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                         <h2 className="major">{postData.title}</h2>
                         <span className="image main"><img src="/images/pic01.jpg" alt="" /></span>
                         <p className="date">{postData.date} by Peter Vanhee</p>
+                        {postData.originalUrl && (
+                            <p style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#757575', marginTop: '-1rem', marginBottom: '2rem' }}>
+                                Originally posted on <a href={postData.originalUrl} target="_blank" rel="noopener noreferrer">{getSourceName(postData.originalUrl)}</a>
+                            </p>
+                        )}
                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }} />
 
                         <hr />
@@ -36,7 +53,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                             <li>
                                 {prevPost ? (
                                     <Link href={`/blog/${prevPost.slug}`} className="button fit">
-                                        &larr; Previous: {prevPost.title}
+                                        &larr; Previous
                                     </Link>
                                 ) : (
                                     <span className="button fit disabled">&larr; Previous</span>
@@ -46,7 +63,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                             <li>
                                 {nextPost ? (
                                     <Link href={`/blog/${nextPost.slug}`} className="button fit">
-                                        Next: {nextPost.title} &rarr;
+                                        Next &rarr;
                                     </Link>
                                 ) : (
                                     <span className="button fit disabled">Next &rarr;</span>

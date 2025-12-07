@@ -4,6 +4,8 @@ date: "2013-06-17"
 originalUrl: "https://marzeelabs.org/blog/2013-06-17-drupal-commerce-done-differently"
 ---
 
+## Building a "design your own whisky cask" e-commerce experience with Drupal Commerce.
+
 Building sites using [Drupal Commerce](https://www.drupal.org/project/commerce) is something we often do at Marzee Labs, but when [EnjoyThis](http://enjoythis.co.uk/) approached us to build an e-commerce site for [The London Distillery Company](http://thelondondistillerycompany.com/) featuring a "design your own whisky cask" part, we immediately seized that opportunity to do something different. In this post, I'll review the architecture of the project.
 
 ## Challenges

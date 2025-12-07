@@ -25,7 +25,7 @@ export default function Blog() {
                 <div id="main" style={{ display: 'block' }}>
                     {allPostsData.map(({ slug, date, title }) => (
                         <article key={slug} id={slug} className="active" style={{ display: 'block', marginBottom: '2rem' }}>
-                            <h2 className="major" style={{ marginBottom: '0.5rem', borderBottom: 'none' }}><Link href={`/blog/${slug}`}>{title}</Link></h2>
+                            <h2 className="major" style={{ marginBottom: '0.5rem', borderBottom: 'none', fontSize: '1.5rem' }}><Link href={`/blog/${slug}`}>{title}</Link></h2>
                             <p style={{ marginBottom: '0', fontSize: '0.9rem', color: '#757575' }}>{date}</p>
                         </article>
                     ))}

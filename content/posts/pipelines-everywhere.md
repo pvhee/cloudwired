@@ -4,7 +4,9 @@ date: "2019-01-31"
 originalUrl: "https://technology.comicrelief.com/2019/01/31/pipelines-everywhere/"
 ---
 
-Continuously delivering software to production systems is a key part of building great digital products and creating a culture of agility within different teams. In this post, I will share our recipes for building pipelines centered around [Concourse CI](https://concourse-ci.org/).
+## Continuously delivering software to production systems is a key part of building great digital products and creating a culture of agility within different teams.
+
+In this post, I will share our recipes for building pipelines centered around [Concourse CI](https://concourse-ci.org/).
 
 ## Pipelines at Comic Relief
 

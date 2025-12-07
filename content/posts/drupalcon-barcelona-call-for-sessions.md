@@ -4,7 +4,7 @@ date: "2015-06-02"
 originalUrl: "https://marzeelabs.org/blog/2015-06-02-drupalcon-barcelona-call-for-sessions"
 ---
 
-Invitation to submit sessions on Front-end and Business & Strategy tracks.
+## Invitation to submit sessions on Front-end and Business & Strategy tracks.
 
 Europe is again getting ready for the [DrupalCon](https://events.drupal.org/barcelona2015/), the annual gathering of Drupal dev and business in Europe. This year we are playing a home game since the conference will be held in Barcelona!
 

@@ -1,6 +1,7 @@
 ---
 title: "A technical deep dive into processing €5 million in donations in 2 hours using Cloudflare Workers"
 date: "2020-12-07"
+originalUrl: "https://medium.com/we-are-serverless/a-technical-deep-dive-into-processing-5-million-in-donations-in-2-hours-using-cloudflare-workers-7dc306c"
 ---
 
 ## A deep dive into the serverless architecture behind the Late Late Toy Show donation platform and the challenges we faced in putting it together in just a couple of weeks.

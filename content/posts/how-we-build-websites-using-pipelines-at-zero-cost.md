@@ -4,7 +4,7 @@ date: "2016-11-28"
 originalUrl: "https://marzeelabs.org/blog/2016-11-28-harpjs"
 ---
 
-Rolling out static sites using HarpJS, Heroku, Travis CI and Github.
+## Rolling out static sites using HarpJS, Heroku, Travis CI and Github.
 
 At Marzee Labs we [like to build static sites](https://marzeelabs.org/blog/2012-06-30-building-simple-sites-jekyll-to-the-rescue). In this blog post, we're sharing an ingredient list to build a new static site — including a deployment and testing pipeline — in *less than an hour*. Best of all, all these tools are for free if you code in the open!
 

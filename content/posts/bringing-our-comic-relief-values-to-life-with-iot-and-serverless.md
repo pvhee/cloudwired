@@ -1,7 +1,10 @@
 ---
 title: "Bringing our Comic Relief Values to life with IoT and Serverless"
 date: "2019-12-06"
+originalUrl: "https://technology.comicrelief.com/2019/12/06/bringing-our-comic-relief-values-to-life-with-iot-and-serverless/"
 ---
+
+## Building a real-time values dashboard using AWS IoT buttons, AppSync, and Lambda.
 
 Seven values, from "Break down Barriers", to "Have a sense of humour, always", together with a wish from our director Charlotte to bring our values to life, proved to be enough inspiration to spend a fun afternoon hacking together a live values dashboard.
 

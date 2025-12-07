@@ -4,6 +4,8 @@ date: "2014-02-08"
 originalUrl: "https://marzeelabs.org/blog/2014-02-08-arte-concert-site-launch"
 ---
 
+## Arte's music platform relaunches on Drupal, streaming over 600 HD concerts yearly.
+
 This week, [Arte](http://www.arte.tv/) — the Franco-German TV network and "European cultural channel" — has launched [ARTE Concert](http://concert.arte.tv/), a rebranding of the music platform Arte Live Web, on the popular [Drupal](https://www.drupal.org/) platform. The relaunch marks a fresh start of the video streaming site, in which over 600 concerts are broadcasted yearly in High Definition — over half of them [live](http://concert.arte.tv/fr/upcoming).
 
 The website content is fully bilingual in German and French, and different content is highlighted for the different audiences on the homepage and other parts of the website. Live concerts are streamed via the website, and Arte produces an on-demand version of the concert in HD that can be viewed online and entirely free on the platform afterwards.

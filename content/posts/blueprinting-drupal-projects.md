@@ -4,7 +4,7 @@ date: "2015-01-06"
 originalUrl: "https://marzeelabs.org/blog/2015-01-06-drupal-profiles"
 ---
 
-Best practices for Drupal makefiles and code repository organization.
+## Best practices for Drupal makefiles and code repository organization.
 
 Planning the structure of a Drupal project is important. At Marzee Labs, we've developed some pretty robust methodologies over time to approach new Drupal projects, and in this post we'll outline some of these tools and processes that help us get off the ground in no time. While some of the topics are probably familiar (Drupal makefiles, installation profiles and such) you might learn some new tips and tricks to make your next Drupal project just that tiny bit more automated and run smooth.
 

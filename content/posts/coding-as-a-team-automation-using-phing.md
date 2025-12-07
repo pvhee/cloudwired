@@ -4,7 +4,7 @@ date: "2014-03-03"
 originalUrl: "https://marzeelabs.org/blog/2014-03-03-coding-as-a-team-automation-using-phing"
 ---
 
-Part one of our Drupal development workflow series.
+## Part one of our Drupal development workflow series.
 
 Drupal development as a team is tough: finding a balance between code and configuration saved in the database is one of the hardest challenges to overcome. When working in a team, it is even more important to control the development cycle, having different people work on different features at the same time, and automate as much as possible of the repetitive tasks you're really to do.
 

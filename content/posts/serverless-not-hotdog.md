@@ -1,9 +1,10 @@
 ---
 title: "Serverless \"Not Hotdog\""
 date: "2019-04-28"
+originalUrl: "https://hackernoon.com/serverless-not-hotdog-dd473cf6506a"
 ---
 
-Building a serverless image classifier using fast.ai, AWS Sagemaker and Lambda.
+## Building a serverless image classifier using fast.ai, AWS Sagemaker and Lambda.
 
 *Update (May 2019): try it out for yourself at https://hotdog-or-not.netlify.com/*
 
