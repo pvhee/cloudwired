@@ -30,21 +30,24 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
     return (
         <>
-            <div id="wrapper" className="blog-wrapper">
-                <header id="header" style={{ display: 'none' }}>
-                    {/* Hidden header for layout consistency if needed, or just omit */}
+            <div id="wrapper" className="notes-wrapper">
+                <header id="header">
+                    <div className="content">
+                        <div className="inner">
+                            <h1>{postData.title}</h1>
+                            <p>{postData.date} • by Peter Vanhee</p>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/notes">Notes</Link></li>
+                        </ul>
+                    </nav>
                 </header>
 
                 <div id="main" style={{ display: 'block' }}>
-                    <article id={slug} className="active" style={{ display: 'block' }}>
-                        <h2 className="major">{postData.title}</h2>
-                        <span className="image main"><img src="/images/pic01.jpg" alt="" /></span>
-                        <p className="date">{postData.date} by Peter Vanhee</p>
-                        {postData.originalUrl && (
-                            <p style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#757575', marginTop: '-1rem', marginBottom: '2rem' }}>
-                                Originally posted on <a href={postData.originalUrl} target="_blank" rel="noopener noreferrer">{getSourceName(postData.originalUrl)}</a>
-                            </p>
-                        )}
+                    <article className="active" style={{ display: 'block', width: '100%' }}>
                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }} />
 
                         <hr />
@@ -52,21 +55,21 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                         <ul className="actions fit">
                             <li>
                                 {prevPost ? (
-                                    <Link href={`/blog/${prevPost.slug}`} className="button fit">
-                                        &larr; Previous
+                                    <Link href={`/notes/${prevPost.slug}`} className="button fit">
+                                        ← {prevPost.title}
                                     </Link>
                                 ) : (
-                                    <span className="button fit disabled">&larr; Previous</span>
+                                    <span className="button fit disabled">← Previous</span>
                                 )}
                             </li>
-                            <li><Link href="/blog" className="button primary fit">Back to Blog</Link></li>
+                            <li><Link href="/notes" className="button primary fit">Back to Notes</Link></li>
                             <li>
                                 {nextPost ? (
-                                    <Link href={`/blog/${nextPost.slug}`} className="button fit">
-                                        Next &rarr;
+                                    <Link href={`/notes/${nextPost.slug}`} className="button fit">
+                                        {nextPost.title} →
                                     </Link>
                                 ) : (
-                                    <span className="button fit disabled">Next &rarr;</span>
+                                    <span className="button fit disabled">Next →</span>
                                 )}
                             </li>
                         </ul>

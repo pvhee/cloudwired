@@ -1756,62 +1756,62 @@ body.is-preload #footer {
 	opacity: 0;
 }
 
-/* Blog Mode Overrides */
-.blog-wrapper {
+/* Notes Mode Overrides */
+.notes-wrapper {
 	background-color: #ffffff;
 	color: #292929;
 	min-height: 100vh;
 }
 
-.blog-wrapper h1,
-.blog-wrapper h2,
-.blog-wrapper h3,
-.blog-wrapper h4,
-.blog-wrapper h5,
-.blog-wrapper h6,
-.blog-wrapper strong,
-.blog-wrapper b {
+.notes-wrapper h1,
+.notes-wrapper h2,
+.notes-wrapper h3,
+.notes-wrapper h4,
+.notes-wrapper h5,
+.notes-wrapper h6,
+.notes-wrapper strong,
+.notes-wrapper b {
 	color: #111111;
 	letter-spacing: normal;
 	text-transform: none;
 }
 
-.blog-wrapper h1,
-.blog-wrapper h2,
-.blog-wrapper h3 {
+.notes-wrapper h1,
+.notes-wrapper h2,
+.notes-wrapper h3 {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	line-height: 1.3;
 }
 
-.blog-wrapper article li {
+.notes-wrapper article li {
 	margin-bottom: 0.5rem;
 	line-height: 1.6;
 }
 
-.blog-wrapper p {
+.notes-wrapper p {
 	font-size: 1.1rem;
 	line-height: 1.8;
 
 }
 
-.blog-wrapper a {
+.notes-wrapper a {
 	color: #1a8917;
 	/* Medium-like green or just dark? Let's go with dark for now */
 	color: #333;
 	border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 
-.blog-wrapper a:hover {
+.notes-wrapper a:hover {
 	border-bottom-color: #333;
 	background-color: transparent;
 }
 
-.blog-wrapper #main {
+.notes-wrapper #main {
 	max-width: 100%;
 }
 
-.blog-wrapper #main article {
+.notes-wrapper #main article {
 	background-color: transparent;
 	width: 48rem;
 	/* Wider than original 40rem */
@@ -1824,48 +1824,48 @@ body.is-preload #footer {
 	opacity: 1 !important;
 }
 
-.blog-wrapper #header {
+.notes-wrapper #header {
 	margin-bottom: 3rem;
 	background-image: none;
 }
 
-.blog-wrapper #header .content {
+.notes-wrapper #header .content {
 	border-color: #333;
 	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 }
 
-.blog-wrapper #header .content p {
+.notes-wrapper #header .content p {
 	color: #555;
 }
 
-.blog-wrapper #header nav ul {
+.notes-wrapper #header nav ul {
 	border-color: #333;
 }
 
-.blog-wrapper #header nav ul li {
+.notes-wrapper #header nav ul li {
 	border-left-color: #333;
 }
 
-.blog-wrapper .button {
+.notes-wrapper .button {
 	box-shadow: inset 0 0 0 1px #333;
 	color: #333 !important;
 }
 
-.blog-wrapper .button:hover {
+.notes-wrapper .button:hover {
 	background-color: rgba(0, 0, 0, 0.05);
 }
 
-.blog-wrapper .button.primary {
+.notes-wrapper .button.primary {
 	background-color: #333;
 	color: #fff !important;
 	box-shadow: none;
 }
 
-.blog-wrapper .button.primary:hover {
+.notes-wrapper .button.primary:hover {
 	background-color: #555;
 }
 
-.blog-wrapper hr {
+.notes-wrapper hr {
 	border-bottom-color: #eee;
 }
 
@@ -1874,12 +1874,12 @@ body.is-preload #footer {
 	display: none;
 }
 
-.blog-wrapper .image:before {
+.notes-wrapper .image:before {
 	display: none;
 	/* Remove overlay on images */
 }
 
-.blog-wrapper .date {
+.notes-wrapper .date {
 	color: #757575;
 	font-size: 0.9rem;
 	margin-bottom: 1rem;
@@ -1887,7 +1887,7 @@ body.is-preload #footer {
 }
 
 /* Typography for blog content */
-.blog-wrapper h2.major {
+.notes-wrapper h2.major {
 	border-bottom-color: #333;
 	font-size: 2.5rem;
 	text-transform: none;
