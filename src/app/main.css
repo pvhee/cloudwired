@@ -1227,7 +1227,6 @@ button {
 	-webkit-transform: scale(1.0);
 	-ms-transform: scale(1.0);
 	transform: scale(1.0);
-	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	position: fixed;
 	top: 0;
@@ -1272,9 +1271,6 @@ button {
 	-webkit-transform: scale(1.125);
 	-ms-transform: scale(1.125);
 	transform: scale(1.125);
-	-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 	background-image: url("/images/bg.jpg");
 	background-position: center;
@@ -1288,9 +1284,6 @@ body.is-article-visible #bg:after {
 	-webkit-transform: scale(1.0825);
 	-ms-transform: scale(1.0825);
 	transform: scale(1.0825);
-	-moz-filter: blur(0.2rem);
-	-webkit-filter: blur(0.2rem);
-	-ms-filter: blur(0.2rem);
 	filter: blur(0.2rem);
 }
 
@@ -1368,9 +1361,6 @@ body.is-preload #bg:before {
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
-	-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 	background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
@@ -1514,17 +1504,11 @@ body.is-article-visible #header {
 	-webkit-transform: scale(0.95);
 	-ms-transform: scale(0.95);
 	transform: scale(0.95);
-	-moz-filter: blur(0.1rem);
-	-webkit-filter: blur(0.1rem);
-	-ms-filter: blur(0.1rem);
 	filter: blur(0.1rem);
 	opacity: 0;
 }
 
 body.is-preload #header {
-	-moz-filter: blur(0.125rem);
-	-webkit-filter: blur(0.125rem);
-	-ms-filter: blur(0.125rem);
 	filter: blur(0.125rem);
 }
 
@@ -1744,9 +1728,6 @@ body.is-preload #header .content .inner {
 /* Footer */
 
 #footer {
-	-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	width: 100%;
 	max-width: 100%;
@@ -1767,9 +1748,6 @@ body.is-article-visible #footer {
 	-webkit-transform: scale(0.95);
 	-ms-transform: scale(0.95);
 	transform: scale(0.95);
-	-moz-filter: blur(0.1rem);
-	-webkit-filter: blur(0.1rem);
-	-ms-filter: blur(0.1rem);
 	filter: blur(0.1rem);
 	opacity: 0;
 }

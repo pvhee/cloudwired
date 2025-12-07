@@ -9,7 +9,7 @@ export default function About() {
                         <div className="inner">
                             <h1>About Me</h1>
                             <p>
-                                Hi there, I'm Peter and I mostly write about cloud-native development.
+                                Hi there, I&apos;m Peter and I mostly write about cloud-native development.
                             </p>
                             <ul className="icons">
                                 <li><a href="https://github.com/pvhee" className="icon brands fa-github"><span className="label">GitHub</span></a></li>
