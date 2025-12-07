@@ -1813,20 +1813,33 @@ body.is-preload #footer {
 
 .notes-wrapper #main article {
 	background-color: transparent;
-	width: 48rem;
-	/* Wider than original 40rem */
-	max-width: 90vw;
-	padding: 0;
+	width: 100%;
+	max-width: 680px;
+	padding: 0 1.5rem;
 	color: #292929;
 	box-shadow: none;
 	transform: none !important;
-	/* Disable the modal animation transform */
 	opacity: 1 !important;
+}
+
+@media screen and (max-width: 736px) {
+	.notes-wrapper #main article {
+		padding: 0 1rem;
+	}
 }
 
 .notes-wrapper #header {
 	margin-bottom: 3rem;
 	background-image: none;
+	width: 100%;
+	max-width: 680px;
+	padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 736px) {
+	.notes-wrapper #header {
+		padding: 0 1rem;
+	}
 }
 
 .notes-wrapper #header .content {
