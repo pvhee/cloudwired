@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import "./main.css";
 import "./noscript.css";
 import InitClient from "./InitClient";
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className="is-preload" suppressHydrationWarning>
         <InitClient />
         {children}
+        <GoogleAnalytics gaId="G-EJC3LC20GM" />
       </body>
     </html>
   );
