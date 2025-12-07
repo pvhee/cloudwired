@@ -56,7 +56,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                             <li>
                                 {prevPost ? (
                                     <Link href={`/notes/${prevPost.slug}`} className="button fit">
-                                        ← {prevPost.title}
+                                        ← Previous
                                     </Link>
                                 ) : (
                                     <span className="button fit disabled">← Previous</span>
@@ -66,7 +66,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                             <li>
                                 {nextPost ? (
                                     <Link href={`/notes/${nextPost.slug}`} className="button fit">
-                                        {nextPost.title} →
+                                        Next →
                                     </Link>
                                 ) : (
                                     <span className="button fit disabled">Next →</span>
