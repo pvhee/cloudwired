@@ -36,6 +36,11 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                         <div className="inner">
                             <h1>{postData.title}</h1>
                             <p>{postData.date} • by Peter Vanhee</p>
+                            {postData.originalUrl && (
+                                <p style={{ fontStyle: 'italic', fontSize: '0.8rem', color: '#aaa', marginTop: '0.5rem' }}>
+                                    Originally posted on <a href={postData.originalUrl} target="_blank" rel="noopener noreferrer">{getSourceName(postData.originalUrl)}</a>
+                                </p>
+                            )}
                         </div>
                     </div>
                     <nav>
@@ -48,6 +53,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
                 <div id="main" style={{ display: 'block' }}>
                     <article className="active" style={{ display: 'block', width: '100%' }}>
+
                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }} />
 
                         <hr />
