@@ -12,12 +12,14 @@ export default function Blog() {
                         <div className="inner">
                             <h1>Blog</h1>
                             <p>Thoughts, tutorials and technical deep dives.</p>
+                            <p style={{ fontSize: '0.8rem', marginTop: '1rem' }}>
+                                Written by <a href="https://www.linkedin.com/in/petervanhee" target="_blank" rel="noopener noreferrer">Peter Vanhee</a>, <a href="https://github.com/pvhee" target="_blank" rel="noopener noreferrer">tinkering technologist</a>.
+                            </p>
                         </div>
                     </div>
                     <nav>
                         <ul>
                             <li><Link href="/">Home</Link></li>
-                            <li><Link href="/about">About</Link></li>
                         </ul>
                     </nav>
                 </header>

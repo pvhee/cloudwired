@@ -9,14 +9,13 @@ export default function Home() {
             <div className="inner">
               <h1>Cloudwired</h1>
               <p>
-                <Link href="/blog">Blog</Link> • <Link href="/about">About Me</Link>
+                <Link href="/blog">Blog</Link>
               </p>
             </div>
           </div>
           <nav>
             <ul>
               <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/about">About</Link></li>
               {/* <li><a href="#contact">Contact</a></li> */}
             </ul>
           </nav>
