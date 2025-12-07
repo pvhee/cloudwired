@@ -1806,7 +1806,7 @@ body.is-preload #footer {
 	line-height: 1.3;
 }
 
-.blog-wrapper li {
+.blog-wrapper article li {
 	margin-bottom: 0.5rem;
 	line-height: 1.6;
 }
@@ -1887,6 +1887,11 @@ body.is-preload #footer {
 
 .blog-wrapper hr {
 	border-bottom-color: #eee;
+}
+
+/* Hide vertical lines in header */
+#header>*:before {
+	display: none;
 }
 
 .blog-wrapper .image:before {
