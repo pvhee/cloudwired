@@ -12,6 +12,6 @@ I talked about our journey of building a product to power all our editorial webs
 
 So far, our product ecosystem proudly powers [www.rednoseday.com](https://www.rednoseday.com/), and the upcoming [Red Nose Day USA Campaign](http://rednoseday.org/), and we are currently working hard to bring [www.comicrelief.com](https://www.comicrelief.com/) on board as well!
 
-Check out the video of my presentation (audio+slides) on YouTube: https://www.youtube.com/watch?v=drSxx5GX0OE
+Check out the [video of my presentation (audio+slides) on YouTube](https://www.youtube.com/watch?v=drSxx5GX0OE).
 
-Or view the slides on SlideShare: https://www.slideshare.net/slideshow/embed_code/key/4lu2hGlI2D8bfL
+Or view the [slides on SlideShare](https://www.slideshare.net/slideshow/embed_code/key/4lu2hGlI2D8bfL).

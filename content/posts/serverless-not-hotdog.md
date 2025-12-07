@@ -6,7 +6,7 @@ originalUrl: "https://hackernoon.com/serverless-not-hotdog-dd473cf6506a"
 
 ## Building a serverless image classifier using fast.ai, AWS Sagemaker and Lambda.
 
-*Update (May 2019): try it out for yourself at https://hotdog-or-not.netlify.app/*
+*Update (May 2019): [try it out for yourself](https://hotdog-or-not.netlify.app/)*
 
 Ever since the "Not Hotdog" app featured on HBO's Silicon Valley, and Tim Anglade's [comprehensive article](https://medium.com/@timanglade/how-hbos-silicon-valley-built-not-hotdog-with-mobile-tensorflow-keras-react-native-ef03260747f3) on how they built this with TensorFlow, I felt challenged to reproduce this with less code and a serverless computing model.
 

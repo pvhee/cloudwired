@@ -55,9 +55,9 @@ Finally, run
 gulp
 ```
 
-to see your new site, which should look like http://mzharp.marzeelabs.org/.
+to see your new site, which should look like [http://mzharp.marzeelabs.org/](http://mzharp.marzeelabs.org/).
 
-After pushing your code back to GitHub, your scaffolded codebase should look similar to https://github.com/marzeelabs/mzharp
+After pushing your code back to GitHub, your scaffolded codebase should look similar to [https://github.com/marzeelabs/mzharp](https://github.com/marzeelabs/mzharp).
 
 ## An environment for each Pull Request
 
