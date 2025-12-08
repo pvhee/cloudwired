@@ -13,7 +13,7 @@ export default function Notes() {
                             <h1>Peter&apos;s Notes</h1>
                             <p>Thoughts, tutorials and technical deep dives.</p>
                             <p style={{ fontSize: '0.8rem', marginTop: '1rem' }}>
-                                Written by <a href="https://www.linkedin.com/in/petervanhee" target="_blank" rel="noopener noreferrer">Peter Vanhee</a>, <Link href="/notes">thinker</Link> and <a href="https://github.com/pvhee" target="_blank" rel="noopener noreferrer">thinkerer</a>.
+                                Written by <a href="https://www.linkedin.com/in/petervanhee" target="_blank" rel="noopener noreferrer">Peter Vanhee</a>, <Link href="/notes">thinker</Link> and <a href="https://github.com/pvhee" target="_blank" rel="noopener noreferrer">thinkerer</a>
                             </p>
                         </div>
                     </div>
