@@ -6,7 +6,7 @@ export default function Notes() {
 
     return (
         <>
-            <div id="wrapper" className="notes-wrapper">
+            <div id="wrapper" className="notes-list-wrapper">
                 <header id="header">
                     <div className="content">
                         <div className="inner">
@@ -28,7 +28,7 @@ export default function Notes() {
                     {allPostsData.map(({ slug, date, title, originalUrl }) => (
                         <article key={slug} id={slug} className="active" style={{ display: 'block', marginBottom: '2rem' }}>
                             <h2 className="major" style={{ marginBottom: '0.5rem', borderBottom: 'none', fontSize: '1.5rem' }}><Link href={`/notes/${slug}`}>{title}</Link></h2>
-                            <p style={{ marginBottom: '0', fontSize: '0.9rem', color: '#757575' }}>
+                            <p style={{ marginBottom: '0', fontSize: '0.9rem' }}>
                                 {date}
                                 {originalUrl && (
                                     <> · Originally posted on <a href={originalUrl} target="_blank" rel="noopener noreferrer">{getSourceName(originalUrl)}</a></>
@@ -42,6 +42,7 @@ export default function Notes() {
                     {/* <p className="copyright">More info soon</p> */}
                 </footer>
             </div>
+            <div id="bg"></div>
         </>
     );
 }
