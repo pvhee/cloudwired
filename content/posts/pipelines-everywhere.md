@@ -1,7 +1,7 @@
 ---
 title: "Pipelines everywhere"
 date: "2019-01-31"
-originalUrl: "https://technology.comicrelief.com/2019/01/31/pipelines-everywhere/"
+originalUrl: "https://medium.com/comic-relief/pipelines-everywhere-9eb284f5bee3"
 ---
 
 ## Continuously delivering software to production systems is a key part of building great digital products and creating a culture of agility within different teams.

@@ -1,7 +1,7 @@
 ---
 title: "How we build websites using pipelines at zero cost"
 date: "2016-11-28"
-originalUrl: "https://marzeelabs.org/blog/2016-11-28-harpjs"
+originalUrl: "https://www.marzee.co/blog/how-we-build-websites-using-pipelines-at-zero-cost"
 ---
 
 ## Rolling out static sites using HarpJS, Heroku, Travis CI and Github.

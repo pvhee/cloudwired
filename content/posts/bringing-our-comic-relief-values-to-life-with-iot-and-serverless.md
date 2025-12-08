@@ -1,7 +1,7 @@
 ---
 title: "Bringing our Comic Relief Values to life with IoT and Serverless"
 date: "2019-12-06"
-originalUrl: "https://technology.comicrelief.com/2019/12/06/bringing-our-comic-relief-values-to-life-with-iot-and-serverless/"
+originalUrl: "https://medium.com/comic-relief/bringing-our-comic-relief-values-to-life-with-iot-and-serverless-782fb5f9ae5e"
 ---
 
 ## Building a real-time values dashboard using AWS IoT buttons, AppSync, and Lambda.

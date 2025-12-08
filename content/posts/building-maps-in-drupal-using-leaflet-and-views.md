@@ -1,7 +1,7 @@
 ---
 title: "Building maps in Drupal using Leaflet and Views"
 date: "2012-09-24"
-originalUrl: "https://marzeelabs.org/blog/2012-09-24-building-maps-in-drupal-using-leaflet-views"
+originalUrl: "https://www.marzee.co/blog/building-maps-in-drupal-using-leaflet-and-views"
 ---
 
 ## The Drupal Leaflet module now has native Views support, making it really easy to display maps of your Drupal data.

@@ -1,7 +1,7 @@
 ---
 title: "DrupalCon Barcelona: call for sessions"
 date: "2015-06-02"
-originalUrl: "https://marzeelabs.org/blog/2015-06-02-drupalcon-barcelona-call-for-sessions"
+originalUrl: "https://www.marzee.co/blog/drupalcon-barcelona-call-for-sessions"
 ---
 
 ## Invitation to submit sessions on Front-end and Business & Strategy tracks.

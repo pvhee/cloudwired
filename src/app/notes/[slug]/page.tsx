@@ -1,21 +1,9 @@
-import { getAllPostSlugs, getPostData, getSortedPostsData } from '@/lib/posts';
+import { getAllPostSlugs, getPostData, getSortedPostsData, getSourceName } from '@/lib/posts';
 import Link from 'next/link';
 
 export async function generateStaticParams() {
     const paths = getAllPostSlugs();
     return paths.map((path) => path.params);
-}
-
-function getSourceName(url: string): string {
-    if (url.includes('marzeelabs.org')) return 'Marzee';
-    if (url.includes('comicrelief.com')) return 'Comic Relief Technology Blog';
-    if (url.includes('hackernoon.com')) return 'Hackernoon';
-    if (url.includes('medium.com/we-are-serverless')) return 'We Are Serverless';
-    try {
-        return new URL(url).hostname;
-    } catch {
-        return url;
-    }
 }
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {

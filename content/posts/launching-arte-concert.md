@@ -1,7 +1,7 @@
 ---
 title: "Launching ARTE Concert"
 date: "2014-02-08"
-originalUrl: "https://marzeelabs.org/blog/2014-02-08-arte-concert-site-launch"
+originalUrl: "https://www.marzee.co/blog/launching-arte-concert"
 ---
 
 ## Arte's music platform relaunches on Drupal, streaming over 600 HD concerts yearly.

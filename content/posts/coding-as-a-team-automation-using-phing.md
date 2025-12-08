@@ -1,7 +1,7 @@
 ---
 title: "Coding as a team: automation using Phing"
 date: "2014-03-03"
-originalUrl: "https://marzeelabs.org/blog/2014-03-03-coding-as-a-team-automation-using-phing"
+originalUrl: "https://www.marzee.co/blog/coding-as-a-team-automation-using-phing"
 ---
 
 ## Part one of our Drupal development workflow series.

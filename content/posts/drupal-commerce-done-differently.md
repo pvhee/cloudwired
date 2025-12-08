@@ -1,7 +1,7 @@
 ---
 title: "Drupal Commerce, done differently"
 date: "2013-06-17"
-originalUrl: "https://marzeelabs.org/blog/2013-06-17-drupal-commerce-done-differently"
+originalUrl: "https://www.marzee.co/blog/drupal-commerce-done-differently"
 ---
 
 ## Building a "design your own whisky cask" e-commerce experience with Drupal Commerce.

@@ -1,7 +1,7 @@
 ---
 title: "Building rednoseday.com on Drupal 8"
 date: "2016-12-21"
-originalUrl: "https://technology.comicrelief.com/2016/12/21/building-rednoseday-com-on-drupal-8/"
+originalUrl: "https://medium.com/comic-relief/building-rednoseday-com-on-drupal-8-22c9eef9dc28"
 ---
 
 ## How can we build an engaging, fast and secure fundraising campaign website in a couple of months?

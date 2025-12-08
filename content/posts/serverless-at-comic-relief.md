@@ -1,7 +1,7 @@
 ---
 title: "Serverless at Comic Relief"
 date: "2018-07-12"
-originalUrl: "https://technology.comicrelief.com/2018/07/12/serverless-at-comic-relief/"
+originalUrl: "https://medium.com/comic-relief/serverless-at-comic-relief-eaf3ff25cbfe"
 ---
 
 ## Over a year into our serverless journey, our functions have been happily running in production — millions of invocations for just a couple of hundred dollars.

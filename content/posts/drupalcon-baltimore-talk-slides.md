@@ -1,7 +1,7 @@
 ---
 title: "Drupalcon Baltimore talk & slides"
 date: "2017-05-14"
-originalUrl: "https://technology.comicrelief.com/2017/05/12/drupalcon-baltimore-talk-slides/"
+originalUrl: "https://medium.com/comic-relief/drupalcon-baltimore-talk-slides-d2179513dae8"
 ---
 
 ## Presenting our story of rebuilding rednoseday.com on Drupal 8 at DrupalCon Baltimore, Drupal's largest gathering with over 3000 attendees.

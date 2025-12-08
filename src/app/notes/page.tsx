@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getSortedPostsData } from '@/lib/posts';
+import { getSortedPostsData, getSourceName } from '@/lib/posts';
 
 export default function Notes() {
     const allPostsData = getSortedPostsData();
@@ -25,10 +25,15 @@ export default function Notes() {
                 </header>
 
                 <div id="main" style={{ display: 'block' }}>
-                    {allPostsData.map(({ slug, date, title }) => (
+                    {allPostsData.map(({ slug, date, title, originalUrl }) => (
                         <article key={slug} id={slug} className="active" style={{ display: 'block', marginBottom: '2rem' }}>
                             <h2 className="major" style={{ marginBottom: '0.5rem', borderBottom: 'none', fontSize: '1.5rem' }}><Link href={`/notes/${slug}`}>{title}</Link></h2>
-                            <p style={{ marginBottom: '0', fontSize: '0.9rem', color: '#757575' }}>{date}</p>
+                            <p style={{ marginBottom: '0', fontSize: '0.9rem', color: '#757575' }}>
+                                {date}
+                                {originalUrl && (
+                                    <> · Originally posted on <a href={originalUrl} target="_blank" rel="noopener noreferrer">{getSourceName(originalUrl)}</a></>
+                                )}
+                            </p>
                         </article>
                     ))}
                 </div>

@@ -1,7 +1,7 @@
 ---
 title: "Drupal Developer Days in Barcelona"
 date: "2012-06-18"
-originalUrl: "https://marzeelabs.org/blog/2012-06-18-drupal-dev-days"
+originalUrl: "https://www.marzee.co/blog/drupal-developer-days-in-barcelona"
 ---
 
 ## Europe's major developer-oriented Drupal event, with over 300 attendants and 30 high-quality sessions.

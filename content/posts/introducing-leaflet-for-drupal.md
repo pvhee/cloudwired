@@ -1,7 +1,7 @@
 ---
 title: "Introducing Leaflet for Drupal"
 date: "2012-09-08"
-originalUrl: "https://marzeelabs.org/blog/2012-09-08-introducing-leaflet-for-drupal"
+originalUrl: "https://www.marzee.co/blog/introducing-leaflet-for-drupal"
 ---
 
 ## A slim, light-weight and beautiful Javascript mapping library comes to Drupal.

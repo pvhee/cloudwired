@@ -7,6 +7,18 @@ import { format } from 'date-fns';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
+export function getSourceName(url: string): string {
+    if (url.includes('marzee')) return 'Marzee';
+    if (url.includes('comic-relief')) return 'Comic Relief Technology Blog';
+    if (url.includes('hackernoon')) return 'Hackernoon';
+    if (url.includes('we-are-serverless')) return 'We Are Serverless';
+    try {
+        return new URL(url).hostname;
+    } catch {
+        return url;
+    }
+}
+
 export interface PostData {
     slug: string;
     title: string;
