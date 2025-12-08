@@ -12,7 +12,7 @@ Ever since the "Not Hotdog" app featured on HBO's Silicon Valley, and Tim Anglad
 
 Now, thanks to the [fantastic course from fast.ai](https://course.fast.ai/) and the release of Lambda Layers at re:Invent last year, I have finally managed to train a model (with an accuracy of 93% on this [Kaggle dataset](https://www.kaggle.com/dansbecker/hot-dog-not-hot-dog/data)) and deploy it to a Lambda function using a [PyTorch](https://pytorch.org/) layer and the [serverless framework](https://serverless.com/). What surprised me most is that it took me less than 10 minutes to train a decent enough classifier using transfer learning, and about 1–2 seconds to make a prediction.
 
-I am convinced that the mix of [AWS Sagemaker](https://aws.amazon.com/sagemaker/) for model training with [AWS Lambda](https://aws.amazon.com/lambda/) for model inference is a winning combination. The beauty of the serverless model for machine learning is that you can do both training and inference and spend just a couple of dollars. Furthermore, running inference of Lambda means that you can put such a model into production without worrying about cost nor scaling (AWS [claims](https://aws.amazon.com/machine-learning/elastic-inference/) that 90% of GPU costs are spent on inference).
+I am convinced that the mix of [AWS Sagemaker](https://aws.amazon.com/sagemaker/) for model training with [AWS Lambda](https://aws.amazon.com/lambda/) for model inference is a winning combination — see also [here](https://medium.com/comic-relief/serverless-at-comic-relief-eaf3ff25cbfe) and [here](https://medium.com/comic-relief/the-journey-to-90-serverless-at-comic-relief-a79356fb76cd) on why I generally think serverless is becoming the primary computing paradigm. The beauty of the serverless model for machine learning is that you can do both training and inference and spend just a couple of dollars. Furthermore, running inference of Lambda means that you can put such a model into production without worrying about cost nor scaling (AWS [claims](https://aws.amazon.com/machine-learning/elastic-inference/) that 90% of GPU costs are spent on inference).
 
 In this post, I'll walk you through model training (using [fast.ai](https://docs.fast.ai/), [Pytorch](https://pytorch.org/) and a GPU-enabled Jupyter notebook instance on AWS Sagemaker), deploying our model to S3 and Lambda, and finally running this at scale in production.
 
@@ -48,7 +48,7 @@ learn.fit_one_cycle(20, max_lr=slice(1e-6,1e-4))
 
 After training, I reached an accuracy of 93%. Only 35 out of 500 test images were incorrectly classified, and it's harder to classify food as hotdog rather than the opposite: 25 pictures are mistakenly identified as a hotdog while only ten hotdog predictions aren't hotdogs.
 
-The key to obtaining reasonable accuracy is to try different things. In my experimentation, I changed the network architecture from resnet35 to resnet50, tried different learning rates, and changed the size of the input images (I found that 400x400 pixels worked better than the traditional 224x224 pixels). While state-of-the-art for this particular problem space is probably around 98% accuracy, I am more than happy to reach 93% accuracy, especially considering that my training set is rather small (remember: we have *only* 500 images for each category).
+The key to obtaining reasonable accuracy is to try different things. In my experimentation, I changed the network architecture from resnet35 to resnet50, tried different learning rates, and changed the size of the input images (I found that 400x400 pixels worked better than the traditional 224x224 pixels). While state-of-the-art for this particular problem space is probably around 98% accuracy, I am more than happy to reach 93% accuracy, especially considering that my training set is rather small (remember: we have *only* 500 images for each category). On this set, other people have gotten to [87%](https://hackernoon.com/anothernothotdog-280ee5b86fb3) and [92%](https://yashuseth.blog/2018/03/05/hotdog-or-not-hotdog-image-classification-in-python-using-fastai/).
 
 Moreover, I didn't want to spend hours waiting for my model to train. Instead, with fast.ai handy default settings and intuitive top-down learning approach, and using an existing image classifier network architecture, I knew I could reach good accuracy *in just a couple of minutes.* In fact, fast.ai [recently managed to set the record of training ImageNet in only 18 minutes to 93% accuracy](https://www.fast.ai/2018/08/10/fastai-diu-imagenet/). These guys are on a serious mission to change the way we do machine learning forever.
 
@@ -88,7 +88,7 @@ s3.meta.client.upload_file(str(tar_file), 'fastai-model', 'hotdog/model.tar.gz')
 
 Once we've got our model in S3, the next step is to have the predictor run on Lambda, so we can make predictions without having to pay for infrastructure left idle.
 
-I use the excellent Fast.ai guide on [Deploying on AWS Lambda](https://course.fast.ai/deployment_aws_lambda.html), but instead of using AWS's [SAM](https://docs.aws.amazon.com/serverless-application-model/index.html) I adopted [the code](https://github.com/fastai/course-v3/blob/master/docs/production/aws-lambda.zip) to work with the node.js [Serverless framework](https://serverless.com/), which is a long-time favourite of mine when it comes to managing serverless workloads.
+I use the excellent Fast.ai guide on [Deploying on AWS Lambda](https://course.fast.ai/deployment_aws_lambda.html), but instead of using AWS's [SAM](https://docs.aws.amazon.com/serverless-application-model/index.html) I adopted [the code](https://github.com/fastai/course-v3/blob/master/docs/production/aws-lambda.zip) to work with the node.js [Serverless framework](https://serverless.com/), which is [a long-time favourite of mine](https://medium.com/comic-relief/serverless-at-comic-relief-eaf3ff25cbfe) when it comes to managing serverless workloads.
 
 The relevant bit of the `serverless.yml` is the function declaration is
 
@@ -145,9 +145,9 @@ Nice! We're reasonably confident that that wasn't a hotdog.
 
 One of the coolest features of Lambda is that scaling is something you don't have to worry about — at least not with our simple predictor which doesn't have downstream dependencies which could be your bottleneck.
 
-To test this, let's run our predictor on a set of 1000 images randomly sampled from the [ImageNet](http://www.image-net.org/) database.
+To test this, let's run our predictor on [a set of 1000 images](https://github.com/ajschumacher/imagen) randomly sampled from the [ImageNet](http://www.image-net.org/) database.
 
-Using [artillery.io](https://artillery.io/) node library, it's easy to simulate ~900 or so requests in less than a minute.
+Using [artillery.io](https://artillery.io/) node library, it's easy to simulate ~900 or so requests in less than a minute ([check out the code if you're interested](https://github.com/pvhee/fastai-hotdog/tree/master/loadtest)).
 
 ```
 All virtual users finished
@@ -173,5 +173,7 @@ The original classifier was architected to run inference on a mobile device. The
 My preferred method to deploy any code to the cloud involves AWS Lambda. I am a firm believer that the serverless paradigm will rapidly take over and become the primary programming model for cloud-native applications. Therefore, I was pleased to get this last bit working without much effort — and I believe serverless inference will become the primary mechanism of running predictions at scale. It also clearly shows you don't need the power of a GPU for anything other than training your model. A simple Lambda with 1Gig of RAM does the trick.
 
 *Check out the code repository with the serverless template [here](https://github.com/pvhee/fastai-hotdog) and the Jupyter notebook I used for model training [here](https://github.com/pvhee/fastai-hotdog/blob/master/notebooks/hotdog.ipynb).*
+
+*If you're interested, what else I've been up to with serverless, check out [a series of blog posts on the Comic Relief technology blog](https://medium.com/comic-relief/serverless/home).*
 
 *Finally, a massive thanks to [Jeremy Howard](https://twitter.com/jeremyphoward) from [fast.ai](https://fast.ai) for making machine learning so easy and enjoyable.*

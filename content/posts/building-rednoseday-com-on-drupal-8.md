@@ -43,7 +43,12 @@ Shifting to a product mind-set when building a site means you can focus on writi
 
 As a charity we're passionate about Open Source. We also do our best to [give back](http://drupal.org/comic-relief) to the Drupal community as much as we can.
 
-Whilst we are still at the start of this journey, we have contributed back some of the modules we created or ported to Drupal 8.
+Whilst we are still at the start of this journey, we have contributed back some of the modules we created, such as
+
+- Our messaging stack ([RabbitMQ module](https://www.drupal.org/project/rabbitmq))
+- [Social links](https://www.drupal.org/project/social_links) module
+- [View Modes Display](https://www.drupal.org/project/view_modes_display) module to preview entity view modes
+- various patches to known contributed modules
 
 We are also in the process of open-sourcing our entire codebase, so that the wider charity community can benefit. Watch this space!
 
