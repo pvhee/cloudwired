@@ -56,3 +56,7 @@ Vogels stressed that "vibe coding without human review is gambling" (with a chee
 > Your best work is hidden. Have pride in your work, the best developer does their best work when nobody is watching.
 
 All in all, I enjoyed attending re:Invent 2025. While the AI buzz was intense — and much of it hype-cycle noise rather than substance — the signal underneath is clear: AWS is adding a powerful new LEGO block to our builder's toolkit. Agents have arrived, and figuring out how to wield them effectively will define the next chapter for cloud-native development.
+
+---
+
+*Thanks to my employer [Cutover](https://www.cutover.com)—AI-powered runbooks built for the enterprise to de-risk mission-critical IT events like disaster recovery, major incidents, and cloud migrations—for sending me to this year's re:Invent. For more on the resilience angle, check out the [Cutover team's recap on resilience trends](https://www.cutover.com/blog/aws-re-invent-2025-recap-on-resilience-trends).*
