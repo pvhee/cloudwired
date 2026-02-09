@@ -2,7 +2,7 @@
 title: "Building Cutover's AI service: A technical deep dive"
 date: "2026-01-21"
 tags: ["AI", "AWS", "Pydantic AI", "Architecture"]
-original_url: "https://www.cutover.com/blog/building-cutover-ai-technical-deep-dive"
+originalUrl: "https://www.cutover.com/blog/building-cutover-ai-technical-deep-dive"
 ---
 
 Behind every AI feature in Cutover sits a dedicated AI Service that does the heavy lifting. It powers our ability to create runbooks from static documents and summarize runbooks so everyone knows the intent behind them, and our in-runbook [AI Assistant](https://www.cutover.com/ai-enabled-runbooks) that offers conversational guidance exactly where teams need it.
