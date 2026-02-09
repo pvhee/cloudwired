@@ -12,6 +12,7 @@ export function getSourceName(url: string): string {
     if (url.includes('comic-relief')) return 'Comic Relief Technology Blog';
     if (url.includes('hackernoon')) return 'Hackernoon';
     if (url.includes('we-are-serverless')) return 'We Are Serverless';
+    if (url.includes('cutover')) return 'Cutover Blog';
     try {
         return new URL(url).hostname;
     } catch {
