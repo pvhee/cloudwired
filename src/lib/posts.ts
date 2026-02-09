@@ -47,7 +47,7 @@ export function getSortedPostsData(): PostData[] {
             slug,
             title: matterResult.data.title,
             date: format(new Date(matterResult.data.date), 'MMM d, yyyy'),
-            originalUrl: matterResult.data.originalUrl || matterResult.data.original_url || null,
+            originalUrl: matterResult.data.originalUrl || null,
         };
     });
     // Sort posts by date
@@ -90,6 +90,6 @@ export async function getPostData(slug: string): Promise<PostData> {
         contentHtml,
         title: matterResult.data.title,
         date: format(new Date(matterResult.data.date), 'MMM d, yyyy'),
-        originalUrl: matterResult.data.originalUrl || matterResult.data.original_url || null,
+        originalUrl: matterResult.data.originalUrl || null,
     };
 }
