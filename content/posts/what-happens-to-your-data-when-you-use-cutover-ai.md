@@ -2,7 +2,7 @@
 title: "What happens to your data when you use Cutover AI"
 date: "2026-05-20"
 tags: ["AI", "Security", "Data Privacy", "AWS Bedrock", "Cutover"]
-original_url: "https://www.cutover.com/blog/what-happens-to-your-data-when-you-use-cutover-ai"
+originalUrl: "https://www.cutover.com/blog/what-happens-to-your-data-when-you-use-cutover-ai"
 ---
 
 Every enterprise security review of an AI feature starts in roughly the same place. We hear the same three questions across our customer base:
