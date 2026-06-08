@@ -12,9 +12,21 @@ export default function Notes() {
                         <div className="inner">
                             <h1>Peter&apos;s Notes</h1>
                             <p>Thoughts, tutorials and technical deep dives.</p>
-                            <p style={{ fontSize: '0.8rem', marginTop: '1rem' }}>
-                                Written by <a href="https://www.linkedin.com/in/petervanhee" target="_blank" rel="noopener noreferrer">Peter Vanhee</a>, <Link href="/notes">thinker</Link> and <a href="https://github.com/pvhee" target="_blank" rel="noopener noreferrer">tinkerer</a>
+                            <p style={{ fontSize: '0.8rem', marginTop: '1rem', marginBottom: '0.75rem' }}>
+                                Written by Peter Vanhee, thinking and tinkering out loud.
                             </p>
+                            <ul className="icons" style={{ margin: 0 }}>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/petervanhee" className="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <span className="label">LinkedIn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/pvhee" className="icon brands fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                        <span className="label">GitHub</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <nav>
